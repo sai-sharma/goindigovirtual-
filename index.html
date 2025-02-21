@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oman Air Virtual</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="p-4 text-white bg-green-600">
-      <div class="container flex justify-between items-center mx-auto">
-        <a href="index.html" class="text-2xl font-bold">Oman Air Virtual</a>
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="about-us.html" class="hover:underline">About Us</a></li>
-          <li><a href="staff.html" class="hover:underline">Our Staff</a></li>
-          <li><a href="fleet.html" class="hover:underline">Fleet</a></li>
-          <li><a href="routes.html" class="hover:underline">Routes</a></li>
-          <li>
-            <a
-              href="apply.html"
-              class="px-4 py-2 text-green-600 bg-white rounded hover:underline"
-              >Apply</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="py-16 text-center text-white bg-green-600">
-      <h1 class="text-4xl font-bold">
-        Spread Your Wings with Oman Air Virtual
-      </h1>
-      <p class="mt-4 text-lg">Experience the future of virtual aviation.</p>
-      <a
-        href="apply.html"
-        class="inline-block px-6 py-3 mt-6 font-semibold text-green-600 bg-white rounded"
-        >Join Now</a
-      >
-    </header>
-    <div class="flex justify-center items-center">
-      <img
-        src="public/Images/IMG_5836.jpg"
-        alt="Oman Air Virtual"
-        class="flex w-full h-full"
-      />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oman Air Virtual Airline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #D4AF37, #C0C0C0);
+    }
+    .gold-text {
+      color: #D4AF37;
+    }
+    .silver-text {
+      color: #C0C0C0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header Section -->
+  <header class="gradient-bg text-white py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-6xl font-bold mb-4 italic uppercase">Oman Air Virtual Airline</h1>
+      <p class="text-2xl italic">Your gateway to the skies of Oman and beyond!</p>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="py-4 mt-8 text-center bg-gray-200">
-      <p>© 2025 Oman Air Virtual</p>
-    </footer>
-  </body>
+  <!-- Mission Section -->
+  <section class="container mx-auto px-4 py-16">
+    <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
+      <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Our Mission</h2>
+      <p class="text-2xl text-gray-700">
+        To guide experienced aviators to reach new virtual heights with a powerful fleet, cutting-edge technology, and a thriving community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="gradient-bg text-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 italic uppercase">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Advanced Fleet -->
+        <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Advanced Fleet</h3>
+            <p class="text-lg">Fly the latest aircraft models with realistic performance and systems, designed for both beginners and seasoned aviators.</p>
+          </div>
+        </div>
+
+        <!-- Daily Flights -->
+        <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Daily Flights</h3>
+            <p class="text-lg">Explore a wide range of daily flights, from short-haul routes to long-haul adventures across the globe.</p>
+          </div>
+        </div>
+
+        <!-- Learning with Us! -->
+        <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Learning with Us!</h3>
+            <p class="text-lg">Enhance your skills with our training programs, tutorials, and resources for pilots of all experience levels.</p>
+          </div>
+        </div>
+
+        <!-- Thriving Community -->
+        <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Thriving Community</h3>
+            <p class="text-lg">Join a global network of passionate aviators, participate in events, and share your love for flying.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#003f87] text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Oman Air Virtual Airline. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
