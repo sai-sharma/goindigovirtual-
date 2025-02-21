@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Oman Air Virtual</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="fixed top-0 z-50 w-full bg-white shadow-md">
-      <div
-        class="container flex justify-between items-center px-6 py-4 mx-auto"
-      >
-        <a href="index.html" class="text-xl font-bold text-green-700"
-          >Oman Air Virtual</a
-        >
-        <ul class="hidden space-x-6 md:flex">
-          <li><a href="index.html" class="hover:text-green-700">Home</a></li>
-          <li><a href="fleet.html" class="hover:text-green-700">Fleet</a></li>
-          <li><a href="routes.html" class="hover:text-green-700">Routes</a></li>
-          <li>
-            <a href="about-us.html" class="font-semibold text-green-700"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="apply.html"
-              class="px-4 py-2 text-white bg-green-700 rounded hover:bg-green-800"
-              >Apply</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oman Air Virtual Airline - About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #D4AF37, #C0C0C0);
+    }
+    .gold-text {
+      color: #D4AF37;
+    }
+    .silver-text {
+      color: #C0C0C0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header Section -->
+  <header class="gradient-bg text-white py-24 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-6xl font-bold mb-4 italic uppercase">Oman Air Virtual Airline</h1>
+      <p class="text-4xl italic mb-8">About Us</p>
+      <p class="text-2xl max-w-2xl mx-auto">
+        Learn more about our mission, history, and the team behind Oman Air Virtual.
+      </p>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="py-16 mt-16 text-center text-white bg-green-700">
-      <h1 class="text-5xl font-bold">About Oman Air Virtual</h1>
-      <p class="mt-4 text-lg">A world-class virtual airline experience</p>
-    </header>
+  <!-- Navigation -->
+  <nav class="bg-[#003f87] text-white py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-6">
+      <a href="index.html" class="hover:text-blue-200">Home</a>
+      <a href="about.html" class="hover:text-blue-200">About Us</a>
+      <a href="operations.html" class="hover:text-blue-200">Operations Plan</a>
+      <a href="ranking.html" class="hover:text-blue-200">Ranking System</a>
+      <a href="organization.html" class="hover:text-blue-200">Organizational Structure</a>
+      <a href="apply.html" class="hover:text-blue-200">Apply</a>
+      <a href="login.html" class="hover:text-blue-200">Login</a>
+    </div>
+  </nav>
 
-    <!-- About Us Content -->
-    <div class="container px-6 py-2 mx-auto">
-      <div class="p-8 bg-white rounded-lg shadow-md">
-        <h2 class="mb-4 text-3xl font-bold text-gray-800">Who We Are</h2>
-        <p class="leading-relaxed text-gray-700">
-          Oman Air Virtual is a premier virtual airline designed for flight
-          simulation enthusiasts. We strive to provide an immersive and
-          realistic flying experience, close
-        </p>
+  <!-- About Us Section -->
+  <section class="container mx-auto px-4 py-16">
+    <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
+      <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">About Us</h2>
+      <p class="text-2xl text-gray-700 mb-8">
+        A lot of interesting routes, from the near Salalah to the far Kuala Lumpur. Of course, all these routes will be operated by our fantastic planes: from the tiny E175 to the fantastic B787–8.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- The Start -->
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">The Start</h3>
+          <p class="text-lg">This Virtual Airline was founded by <strong>Sai Sharma | EmiratesPilot9</strong> in <strong>February 2025</strong>, with the help of some dedicated individuals.</p>
+        </div>
+
+        <!-- Explore The World From Oman -->
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Explore The World From Oman</h3>
+          <p class="text-lg">With us, some 38 destinations across 23 different countries, we offer a vast choice of routes for our pilots, connecting Europe and Asia to Oman.</p>
+        </div>
+
+        <!-- Ranking Structure -->
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Ranking Structure</h3>
+          <p class="text-lg">We offer our pilots a system of rank by aircraft, starting with the small ERJ–175 and progressing to the command of a Boeing 787–8.</p>
+        </div>
       </div>
     </div>
-    <div class="container px-6 py-2 mx-auto">
-      <img
-        src="public/Images/IMG_5836.jpg"
-        alt="Oman Air Virtual"
-        class="w-full h-full"
-      />
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#003f87] text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Oman Air Virtual Airline. All rights reserved.</p>
     </div>
-  </body>
+  </footer>
+</body>
 </html>
