@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apply - Oman Air Virtual</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="p-4 bg-white shadow-md">
-      <div class="container flex justify-between items-center mx-auto">
-        <h1 class="text-xl font-bold text-green-700">Oman Air Virtual</h1>
-        <ul class="flex space-x-6">
-          <li>
-            <a href="index.html" class="text-gray-700 hover:text-green-600"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="about-us.html" class="text-gray-700 hover:text-green-600"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a href="staff.html" class="text-gray-700 hover:text-green-600"
-              >Our Staff</a
-            >
-          </li>
-          <li>
-            <a href="fleet.html" class="text-gray-700 hover:text-green-600"
-              >Fleet</a
-            >
-          </li>
-          <li>
-            <a href="routes.html" class="text-gray-700 hover:text-green-600"
-              >Routes</a
-            >
-          </li>
-          <li>
-            <a
-              href="apply.html"
-              class="px-4 py-2 text-white bg-green-700 rounded hover:bg-green-800"
-              >Apply</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="flex absolute">
-      <img
-        src="public/Images/IMG_5836.jpg"
-        alt="Oman Air Virtual"
-        class="flex w-full h-full"
-      />
-      <div
-        class="flex absolute inset-0 flex-col justify-center items-center min-h-screen bg-black bg-opacity-50"
-      >
-        <h2 class="text-3xl font-bold text-white">Apply to Oman Air Virtual</h2>
-        <p class="mt-2 text-white">Fill out the form to join us!</p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSepwn6a_Ke1CY1LZmYwJltantM7opqeTy_C7-nuExihOlyEXw/viewform?usp=dialog"
-          target="_blank"
-          class="px-6 py-3 mt-4 font-semibold text-white bg-green-700 rounded hover:bg-green-800"
-        >
-          Apply Now
-        </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oman Air Virtual Airline - Apply</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #D4AF37, #C0C0C0);
+    }
+    .gold-text {
+      color: #D4AF37;
+    }
+    .silver-text {
+      color: #C0C0C0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header Section -->
+  <header class="gradient-bg text-white py-24 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-6xl font-bold mb-4 italic uppercase">Oman Air Virtual Airline</h1>
+      <p class="text-4xl italic mb-8">Apply Today</p>
+      <p class="text-2xl max-w-2xl mx-auto">
+        Join our team of passionate aviators and staff members. Start your journey with Oman Air Virtual today!
+      </p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-[#003f87] text-white py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-6">
+      <a href="index.html" class="hover:text-blue-200">Home</a>
+      <a href="about.html" class="hover:text-blue-200">About Us</a>
+      <a href="operations.html" class="hover:text-blue-200">Operations Plan</a>
+      <a href="ranking.html" class="hover:text-blue-200">Ranking System</a>
+      <a href="organization.html" class="hover:text-blue-200">Organizational Structure</a>
+      <a href="apply.html" class="hover:text-blue-200">Apply</a>
+      <a href="login.html" class="hover:text-blue-200">Login</a>
+    </div>
+  </nav>
+
+  <!-- Apply Section -->
+  <section class="container mx-auto px-4 py-16">
+    <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
+      <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Join Our Team</h2>
+      <p class="text-2xl text-gray-700 mb-8">
+        We are looking for passionate individuals to join our team as pilots or staff members. Choose your role and start your application today!
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Pilot Application -->
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-3xl font-bold mb-4 italic uppercase gold-text">Pilot Application</h3>
+          <p class="text-xl text-gray-700 mb-4">
+            Become a pilot with Oman Air Virtual and take to the skies on exciting routes around the world.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSepwn6a_Ke1CY1LZmYwJltantM7opqeTy_C7-nuExihOlyEXw/viewform?usp=dialog" 
+             class="bg-[#003f87] text-white px-8 py-3 rounded-lg hover:bg-[#002a5a]"
+             target="_blank">
+            Apply as Pilot
+          </a>
+        </div>
+
+        <!-- Staff Application -->
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-3xl font-bold mb-4 italic uppercase gold-text">Staff Application</h3>
+          <p class="text-xl text-gray-700 mb-4">
+            Join our team as a staff member and contribute to the success of Oman Air Virtual.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSepwn6a_Ke1CY1LZmYwJltantM7opqeTy_C7-nuExihOlyEXw/viewform?usp=dialog" 
+             class="bg-[#003f87] text-white px-8 py-3 rounded-lg hover:bg-[#002a5a]"
+             target="_blank">
+            Apply as Staff
+          </a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Apply Section -->
-
-    <!-- Footer -->
-    <footer class="py-4 mt-6 text-center bg-white shadow-md">
-      <p class="text-gray-600">&copy; 2025 Oman Air Virtual</p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer class="bg-[#003f87] text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Oman Air Virtual Airline. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
