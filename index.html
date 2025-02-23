@@ -6,9 +6,10 @@
     <title>Oman Air Virtual Airline</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
         body {
             font-family: 'Roboto Condensed', sans-serif;
+            scroll-behavior: smooth;
         }
         .gradient-bg {
             background: linear-gradient(135deg, #D4AF37, #C0C0C0);
@@ -19,16 +20,23 @@
         .silver-text {
             color: #C0C0C0;
         }
-        .hidden-section {
-            display: none;
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <!-- Header Section -->
-    <header class="gradient-bg text-white py-24 text-center">
+    
+    <!-- Header -->
+    <header class="gradient-bg text-white py-24 text-center fade-in">
         <div class="container mx-auto px-4">
-            <h1 class="text-6xl font-bold mb-4 italic uppercase">Welcome to Oman Air Virtual</h1>
+            <h1 class="text-6xl font-bold mb-4 italic uppercase animate-bounce">Welcome to Oman Air Virtual</h1>
             <p class="text-4xl italic mb-8">From Muscat to the World</p>
             <p class="text-2xl max-w-2xl mx-auto">
                 We serve a part of the globe from and to Muscat, offering interesting long, medium, and short-haul flight routes operated by a variety of aircraft.
@@ -37,315 +45,97 @@
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-[#003f87] text-white py-4">
+    <nav class="bg-[#003f87] text-white py-4 shadow-lg fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 flex justify-center space-x-6">
-            <a href="#home" class="nav-link hover:text-blue-200">Home</a>
-            <a href="#about" class="nav-link hover:text-blue-200">About Us</a>
-            <a href="#operations" class="nav-link hover:text-blue-200">Operations Plan</a>
-            <a href="#ranking" class="nav-link hover:text-blue-200">Ranking System</a>
-            <a href="#organization" class="nav-link hover:text-blue-200">Organizational Structure</a>
-            <a href="#fleet" class="nav-link hover:text-blue-200">Fleet</a>
-            <a href="#routes" class="nav-link hover:text-blue-200">Routes</a>
-            <a href="#cadet" class="nav-link hover:text-blue-200">Cadet Program</a>
-            <a href="#apply" class="nav-link hover:text-blue-200">Apply</a>
+            <a href="#home" class="nav-link hover:text-blue-200 transition">Home</a>
+            <a href="#about" class="nav-link hover:text-blue-200 transition">About Us</a>
+            <a href="#operations" class="nav-link hover:text-blue-200 transition">Operations</a>
+            <a href="#ranking" class="nav-link hover:text-blue-200 transition">Ranking</a>
+            <a href="#fleet" class="nav-link hover:text-blue-200 transition">Fleet</a>
+            <a href="#routes" class="nav-link hover:text-blue-200 transition">Routes</a>
+            <a href="#apply" class="nav-link hover:text-blue-200 transition">Apply</a>
         </div>
     </nav>
 
     <!-- Sections -->
-    <main class="container mx-auto px-4 py-16">
-        <!-- Home Section (Default Visible) -->
-        <section id="home" class="section">
+    <main class="container mx-auto px-4 py-24">
+        
+        <!-- Home -->
+        <section id="home" class="section fade-in">
             <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
                 <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Home</h2>
                 <p class="text-2xl text-gray-700 mb-8">
                     Welcome to Oman Air Virtual! Explore our virtual airline and join our community of aviation enthusiasts.
                 </p>
-                <img src="aircraft.jpg" alt="Aircraft" class="w-full rounded-lg mb-8">
-                <p class="text-xl text-gray-700">
-                    Oman Air Virtual is a community-driven virtual airline that simulates the operations of Oman Air. We provide a realistic and immersive experience for aviation enthusiasts, offering a wide range of routes, aircraft, and training programs.
-                </p>
+                <img src="aircraft.jpg" alt="Aircraft" class="w-full rounded-lg mb-8 transition hover:scale-105">
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="section hidden-section">
+        <!-- About Us -->
+        <section id="about" class="section fade-in">
             <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
                 <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">About Us</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Founded in February 2025 by Sai Sharma, Oman Air Virtual aims to bring the thrill of aviation to virtual skies. With a focus on realism and community, we offer a platform for pilots to grow, learn, and connect.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- The Start -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">The Start</h3>
-                        <p class="text-lg">Founded by <strong>Sai Sharma | EmiratesPilot9</strong> in <strong>February 2025</strong>, Oman Air Virtual has grown into a thriving community of aviation enthusiasts.</p>
-                    </div>
-
-                    <!-- Explore The World From Oman -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Explore The World From Oman</h3>
-                        <p class="text-lg">With 38 destinations across 23 countries, we connect Muscat to the world, offering a vast choice of routes for our pilots.</p>
-                    </div>
-
-                    <!-- Ranking Structure -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Ranking Structure</h3>
-                        <p class="text-lg">Our pilots progress through ranks, starting as Cadet Pilots and advancing to Senior Captains, unlocking new opportunities along the way.</p>
-                    </div>
-                </div>
+                <p class="text-2xl text-gray-700 mb-8">Founded in February 2025 by Sai Sharma, Oman Air Virtual aims to bring the thrill of aviation to virtual skies.</p>
             </div>
         </section>
 
-        <!-- Operations Plan Section -->
-        <section id="operations" class="section hidden-section">
+        <!-- Operations -->
+        <section id="operations" class="section fade-in">
             <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
                 <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Operations Plan</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Our operations plan ensures smooth and efficient virtual flights, with detailed schedules and procedures.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Flight Scheduling</h3>
-                        <p class="text-lg">We provide detailed flight schedules for our pilots, ensuring a realistic and immersive experience.</p>
-                    </div>
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Training Programs</h3>
-                        <p class="text-lg">Our training programs help pilots improve their skills and progress through the ranks.</p>
-                    </div>
-                </div>
+                <p class="text-2xl text-gray-700 mb-8">Our operations plan ensures smooth and efficient virtual flights.</p>
             </div>
         </section>
 
-        <!-- Ranking System Section -->
-        <section id="ranking" class="section hidden-section">
-            <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
-                <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Ranking System</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Our ranking system allows pilots to progress based on their flight hours and experience. Start as a Cadet Pilot and work your way up to Senior Captain!
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Cadet Pilot</h3>
-                        <p class="text-lg">Start your journey as a Cadet Pilot and learn the basics of virtual aviation.</p>
-                    </div>
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">First Officer</h3>
-                        <p class="text-lg">Progress to First Officer and take on more challenging routes.</p>
-                    </div>
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Senior Captain</h3>
-                        <p class="text-lg">Reach the rank of Senior Captain and lead our virtual airline to new heights.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Organizational Structure Section -->
-        <section id="organization" class="section hidden-section">
-            <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
-                <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Organizational Structure</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Our organizational structure ensures efficient management and a seamless experience for our pilots and staff.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Management Team</h3>
-                        <p class="text-lg">Our management team oversees the operations and ensures the smooth functioning of the virtual airline.</p>
-                    </div>
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Pilot Community</h3>
-                        <p class="text-lg">Our pilot community is the backbone of Oman Air Virtual, contributing to its growth and success.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Fleet Section -->
-        <section id="fleet" class="section hidden-section">
+        <!-- Fleet -->
+        <section id="fleet" class="section fade-in">
             <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
                 <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Fleet</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Explore our modern fleet of aircraft, designed for comfort and efficiency.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Boeing 787-8 -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Boeing 787-8</h3>
-                        <img src="b787-8.jpg" alt="Boeing 787-8" class="w-full rounded-lg mb-4">
-                        <p class="text-lg">
-                            The <strong>Boeing 787-8</strong> is our flagship aircraft for long-haul routes. It offers exceptional fuel efficiency, passenger comfort, and a range of up to 7,530 nautical miles.
-                        </p>
-                    </div>
-
-                    <!-- Airbus A330-300 -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Airbus A330-300</h3>
-                        <img src="a330-300.jpg" alt="Airbus A330-300" class="w-full rounded-lg mb-4">
-                        <p class="text-lg">
-                            The <strong>Airbus A330-300</strong> is perfect for medium to long-haul routes. With a capacity of up to 300 passengers, it combines efficiency, comfort, and reliability.
-                        </p>
-                    </div>
-
-                    <!-- Boeing 737 Max 8 -->
-                    <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Boeing 737 Max 8</h3>
-                        <img src="b737-max8.jpg" alt="Boeing 737 Max 8" class="w-full rounded-lg mb-4">
-                        <p class="text-lg">
-                            The <strong>Boeing 737 Max 8</strong> is ideal for short to medium-haul routes. It features advanced aerodynamics, fuel efficiency, and a range of up to 3,550 nautical miles.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Routes Section -->
-        <section id="routes" class="section hidden-section">
-            <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
-                <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Routes</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    We serve a part of the globe from and to Muscat, offering interesting long, medium, and short-haul flight routes.
-                </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Long-Haul Routes</h3>
-                        <p class="text-lg">Connect Muscat to major cities around the world with our long-haul routes.</p>
+                        <h3 class="text-2xl font-bold gold-text">Boeing 787-8</h3>
+                        <img src="b787-8.jpg" alt="Boeing 787-8" class="w-full rounded-lg transition hover:scale-105">
                     </div>
                     <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Medium-Haul Routes</h3>
-                        <p class="text-lg">Explore regional destinations with our medium-haul routes.</p>
+                        <h3 class="text-2xl font-bold gold-text">Airbus A330-300</h3>
+                        <img src="a330-300.jpg" alt="A330-300" class="w-full rounded-lg transition hover:scale-105">
                     </div>
                     <div class="bg-gray-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Short-Haul Routes</h3>
-                        <p class="text-lg">Enjoy quick flights to nearby destinations with our short-haul routes.</p>
+                        <h3 class="text-2xl font-bold gold-text">Boeing 737 MAX 8</h3>
+                        <img src="b737-max8.jpg" alt="737 MAX 8" class="w-full rounded-lg transition hover:scale-105">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Cadet Program Section -->
-        <section id="cadet" class="section hidden-section">
-            <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
-                <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Cadet Pilot Program</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    The Cadet Pilot Program at Oman Air Virtual ensures that every aspiring pilot gets the chance to fly with us.
-                </p>
-
-                <!-- Guaranteed Entry -->
-                <div class="bg-gray-100 p-8 rounded-lg mb-8">
-                    <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Guaranteed Entry</h3>
-                    <p class="text-lg">
-                        If you apply for the Cadet Pilot Program, you are <strong>100% guaranteed</strong> to start flying with Oman Air Virtual.
-                    </p>
-                </div>
-
-                <!-- Eligibility -->
-                <div class="bg-gray-100 p-8 rounded-lg mb-8">
-                    <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Eligibility</h3>
-                    <p class="text-lg">
-                        This program is available for all members with <strong>0-10 flight hours</strong>.
-                    </p>
-                </div>
-
-                <!-- Complimentary Cadet Program -->
-                <div class="bg-gray-100 p-8 rounded-lg mb-8">
-                    <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">Complimentary Cadet Program</h3>
-                    <p class="text-lg">
-                        If a pilot fails the main pilot application test, they will be automatically enrolled in the <strong>complimentary Cadet Program</strong> to improve their skills. This ensures that every pilot has a fair chance to progress and join our ranks.
-                    </p>
-                </div>
-
-                <!-- How to Get Started -->
-                <div class="bg-gray-100 p-8 rounded-lg mb-8">
-                    <h3 class="text-2xl font-bold mb-4 italic uppercase gold-text">How to Get Started?</h3>
-                    <p class="text-lg">
-                        Apply for the Cadet Pilot Program via our website. <strong>No one is left behind</strong> at Oman Air Virtual! This program ensures that every pilot gets a chance to take off with us.
-                    </p>
-                </div>
-
-                <!-- Call to Action -->
-                <div class="mt-8">
-                    <p class="text-2xl text-gray-700 mb-8">
-                        Ready to start your journey? Apply today!
-                    </p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaGJLYn1QzGqKMcarfwI1taSS_ZbyW4DeZjWaKqupx-thIIA/viewform?usp=dialog"
-                       class="bg-[#C5A42A] text-white px-8 py-3 rounded-lg hover:bg-[#A88C22] transition duration-300"
-                       target="_blank">
-                        Apply for Cadet Program
-                    </a>
-                </div>
-
-                <!-- Tagline -->
-                <div class="mt-12">
-                    <p class="text-2xl text-gray-700 italic">
-                        The Only Virtual Airline With <strong>CADET PILOT PROGRAM FOR ALL</strong>.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Apply Section -->
-        <section id="apply" class="section hidden-section">
+        <!-- Apply -->
+        <section id="apply" class="section fade-in">
             <div class="bg-white p-12 rounded-lg shadow-2xl text-center">
                 <h2 class="text-4xl font-bold mb-8 italic uppercase gold-text">Apply</h2>
-                <p class="text-2xl text-gray-700 mb-8">
-                    Join our team of passionate aviators and staff members. Start your journey with Oman Air Virtual today!
-                </p>
-                <div class="flex justify-center space-x-6">
-                    <!-- Apply as Pilot -->
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaGJLYn1QzGqKMcarfwI1taSS_ZbyW4DeZjWaKqupx-thIIA/viewform?usp=dialog"
-                       class="bg-[#C5A42A] text-white px-8 py-3 rounded-lg hover:bg-[#A88C22] transition duration-300"
-                       target="_blank">
-                        Apply as Pilot
-                    </a>
-                    <!-- Apply as Staff -->
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkTSvkqAJnG9L3S60lBrTjAIMcnR4VOqmrfnBDaIj837YOfA/viewform?usp=dialog"
-                       class="bg-[#C5A42A] text-white px-8 py-3 rounded-lg hover:bg-[#A88C22] transition duration-300"
-                       target="_blank">
-                        Apply as Staff
-                    </a>
-                </div>
+                <a href="#" class="bg-[#C5A42A] text-white px-8 py-3 rounded-lg hover:bg-[#A88C22] transition duration-300">Apply Now</a>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#003f87] text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 Oman Air Virtual Airline. All rights reserved.</p>
-        </div>
+    <footer class="bg-[#003f87] text-white py-8 text-center">
+        <p>© 2025 Oman Air Virtual. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript to Handle Section Toggles -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            // Hide all sections except Home
-            sections.forEach(section => {
-                if (section.id !== 'home') {
-                    section.classList.add('hidden-section');
-                }
-            });
-
-            // Add click event listeners to navigation links
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Prevent default link behavior
-
-                    // Hide all sections
-                    sections.forEach(section => {
-                        section.classList.add('hidden-section');
-                    });
-
-                    // Show the clicked section
-                    const targetSection = document.querySelector(this.getAttribute('href'));
-                    if (targetSection) {
-                        targetSection.classList.remove('hidden-section');
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
                     }
                 });
-            });
+            }, { threshold: 0.2 });
+            sections.forEach(section => observer.observe(section));
         });
     </script>
+
 </body>
 </html>
